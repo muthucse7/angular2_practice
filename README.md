@@ -194,9 +194,22 @@ Shut it down manually with `Ctrl-C`.
 [travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
 [travis-badge-url]: https://travis-ci.org/angular/quickstart
 
-********************************************************************************
+
 ### JSONPlaceholder
 Fake Online REST API for Testing and Prototyping 
 powered by JSON Server and lowdb
+
+Intro
+JSONPlaceholder is a free online REST service that you can use whenever you need some fake data.
+
+It's great for tutorials, faking a server, sharing code examples, ...
+
+Example
+Run this code in a console or from anywhere. 
+HTTP and HTTPS are both supported.
+
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 https://jsonplaceholder.typicode.com/
