@@ -1,0 +1,61 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.sub_section {
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.get_servicecontainer {
+  height: 200px;
+  overflow-y: auto;
+  background: #87d2c0;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.get_commentscontainer {
+  height: 200px;
+  overflow-y: auto;
+  background: #6bc77a;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.width45 {
+  width: 45%;
+  float: left;
+  margin-left: 20px;
+}
+.hoppies_Btn {
+  background: pink;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: dodgerblue;
+  font-size: 15px;
+  margin: 2%;
+}
+.hoppies_section {
+  background: orange;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.mailtable_td td{
+  border: 1px solid darkgray;
+}
+
+.mailtable_td tr {
+  border: 1px solid red;
+}
+.mailtable_td th {
+  border: 2px solid darkgray;
+  font-size: 17px;
+  background: azure;
+}

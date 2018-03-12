@@ -1,0 +1,62 @@
+<!--<h1>Hello Angular, Developer: {{name}}</h1>
+              <div class='sub_section'><p><strong>Email:</strong>{{email}}</p>
+              <p><strong>Address:</strong><br>{{address.street}}, <br>{{address.city}}, <br>{{address.state}}, <br>{{address.country}}</p>
+             </div>-->
+
+
+<table style="width:100%" class="mailtable_td">
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Company</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.street}}, {{user.address.zipcode}}, {{user.address.geo.lat}}, {{user.address.geo.lng}}</td>
+    <td>{{user.phone}}</td>
+    <td>{{user.website}}</td>
+    <td>{{user.company.name}}, {{user.company.catchPhrase}}, {{user.company.bs}}</td>
+  </tr>
+</table>
+
+<div class="tableSection_container">
+  <div class="get_servicecontainer width45">
+    <h3>Get Service Response</h3>
+    <div *ngFor="let post of posts">
+      <h3>{{post.title}}</h3>
+      <p>{{post.body}}</p> <br>
+    </div>
+  </div>
+
+  <div class="get_commentscontainer width45">
+    <h3>Get Comments Response</h3>
+    <div *ngFor="let comment of comments">
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.email}}</p> <br>
+      <p>{{comment.body}}</p> <br>
+    </div>
+  </div>
+</div>
+
+<div class="hoopies_section">
+  <button (click)="toggleHoppies()" class="hoppies_Btn"> {{showHoppies? "Hide Hoppies" : "Show Hoppies"}} </button>
+  <div *ngIf="showHoppies" class="hoppies_section">
+    <h3>Hoppies</h3>
+    <ul>
+      <li *ngFor="let hoppy of hoppies; let i = index">
+        {{hoppy}} <button (click)="deleteHoppy(i)">X</button>
+      </li>
+    </ul>
+    <form (submit)="addHoppies(hoppy.value)">
+      <label>Add Hoppy: </label> <br>
+      <input type='text' #hoppy />
+    </form>
+  </div>
+</div>
+
