@@ -40,17 +40,10 @@ export class UserComponent {
             country: 'United State of America'
         }*/
         this.hoppies = ['watching TV', 'Listening Music', 'YMCA GYM'];
-        this.showHoppies = false;
+        this.showHoppies = true;
 
     }
 
-    toggleHoppies() {
-        if (this.showHoppies == true) {
-            this.showHoppies = false;
-        } else {
-            this.showHoppies = true;
-        }
-    }
     addHoppies(value: String) {
         this.hoppies.push(value);
         console.log("test");

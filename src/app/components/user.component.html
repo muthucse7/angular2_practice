@@ -2,61 +2,99 @@
               <div class='sub_section'><p><strong>Email:</strong>{{email}}</p>
               <p><strong>Address:</strong><br>{{address.street}}, <br>{{address.city}}, <br>{{address.state}}, <br>{{address.country}}</p>
              </div>-->
+<!-- Table -->
+<div class="container">
+  <div class="well well-lg"> <h1>Welcome</h1>
+    <h2>Angular 2 & Bootstrap & Restful Service Implementation</h2>
 
 
-<table style="width:100%" class="mailtable_td">
-  <tr>
-    <th>Name</th>
-    <th>Username</th>
-    <th>Email</th>
-    <th>Address</th>
-    <th>Phone</th>
-    <th>Website</th>
-    <th>Company</th>
-  </tr>
-  <tr *ngFor="let user of users">
-    <td>{{user.name}}</td>
-    <td>{{user.username}}</td>
-    <td>{{user.email}}</td>
-    <td>{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.street}}, {{user.address.zipcode}}, {{user.address.geo.lat}}, {{user.address.geo.lng}}</td>
-    <td>{{user.phone}}</td>
-    <td>{{user.website}}</td>
-    <td>{{user.company.name}}, {{user.company.catchPhrase}}, {{user.company.bs}}</td>
-  </tr>
-</table>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary pull-right marign_top10" data-toggle="modal" data-target="#myModal">
+      Launch Show Hoppies Modal Popup
+    </button>
 
-<div class="tableSection_container">
-  <div class="get_servicecontainer width45">
-    <h3>Get Service Response</h3>
-    <div *ngFor="let post of posts">
-      <h3>{{post.title}}</h3>
-      <p>{{post.body}}</p> <br>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog"  *ngIf="showHoppies" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Hoppies</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li *ngFor="let hoppy of hoppies; let i = index">
+                {{hoppy}} <span (click)="deleteHoppy(i)" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+              </li>
+            </ul>
+            <form (submit)="addHoppies(hoppy.value)">
+              <label>Add Hoppy: </label> <br>
+              <input type='text' #hoppy />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.street}}, {{user.address.zipcode}}, {{user.address.geo.lat}}, {{user.address.geo.lng}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.website}}</td>
+        <td>{{user.company.name}}, {{user.company.catchPhrase}}, {{user.company.bs}}</td>
+      </tr>
+    </table>
+  </div>
+
+<!-- Accordion -->
+  <div class="bs-example" data-example-id="collapse-accordion">
+    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-primary" *ngFor="let comment of comments; let i = index">
+        <div class="panel-heading" role="tab" id="headingTwo_{{i}}">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo_{{i}}" aria-expanded="false" aria-controls="collapseOne">
+              {{comment.name}} - {{comment.email}}
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo_{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            {{comment.body}}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="get_commentscontainer width45">
-    <h3>Get Comments Response</h3>
-    <div *ngFor="let comment of comments">
-      <h3>{{comment.name}}</h3>
-      <p>{{comment.email}}</p> <br>
-      <p>{{comment.body}}</p> <br>
+
+  <div class="panel panel-info">
+    <div class="panel-body">
+      Copyright © 2018 <span class="pull-right">Author: Muthu Selvam </span>
     </div>
   </div>
-</div>
 
-<div class="hoopies_section">
-  <button (click)="toggleHoppies()" class="hoppies_Btn"> {{showHoppies? "Hide Hoppies" : "Show Hoppies"}} </button>
-  <div *ngIf="showHoppies" class="hoppies_section">
-    <h3>Hoppies</h3>
-    <ul>
-      <li *ngFor="let hoppy of hoppies; let i = index">
-        {{hoppy}} <button (click)="deleteHoppy(i)">X</button>
-      </li>
-    </ul>
-    <form (submit)="addHoppies(hoppy.value)">
-      <label>Add Hoppy: </label> <br>
-      <input type='text' #hoppy />
-    </form>
-  </div>
 </div>
 
