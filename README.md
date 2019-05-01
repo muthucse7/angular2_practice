@@ -206,7 +206,7 @@ It's great for tutorials, faking a server, sharing code examples.
 
 Example
 Run this code in a console or from anywhere. 
-HTTP and HTTPS are both supported.
+HTTP and HTTPS are both supported. test
 
 ```shell
 fetch('https://jsonplaceholder.typicode.com/posts/1')
