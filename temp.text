@@ -1,0 +1,40 @@
+This is Muthu Selvam. 
+
+1.	Having 9+ years of experience in the frontend development, designing UI architecture, implementing prototype using the latest technology stacks like React, Angular, Kendo UI, Typescript, HTML5, CSS3, Ajax etc. 
+2.	Having strong Java middleware development experience by developing Restful/SOA web service using Spring MVC, Spring Boot, Hibernate, JPA, JDBC, MySQL/Oracle 12G database
+3.	Also, having good exposure on wiring automated test scripts using Selenium, Cucumber, Jasmin, Karma, ETM, etc.
+4.	Also, I have good exposure on DevOps 2020 CI/CD, TDD integration by onboarding U.S Bank enterprise tools like Git, Jenkins, SonarQube, Fortify, Black Ducker etc.
+5.	Also, I worked couple reusable template like handlebar, Mustache, Ractive etc.
+6.	Expert in designing and developing Responsive/Adaptive web design for the browser compatibility and Hybrid mobile application (Mobile, tablet, Desktop)
+7.	Having good exposure on customer facing application Accessibility Guidelines and the deployment process. 
+
+I recently joined with Senior React Developer at bank Of America for the Cashpro online/Mobile application development. Developed 2 -3 reusable widget foe the application.
+
+Coming to My US bank project, 
+This is Real-time OFAC transaction screening application under AML. 
+Overview of the Project: 
+This is the new project we developed from the scratch by integrating with third part vendor tool Fircosoft application. It has 4-5 modules under this projects,
+- Real-time Dashboard (To get more on the transaction related tracking)
+- Java Batch’s (To run particular time and process the couples of jobs)
+- Web focus Reports 
+- Rescans 
+- FOFTEST
+
+Real-time Dashboard: (This is project I took complete E2E responsibilities until the PROD environments.)
+Roles & Responsibilities:
+
+1.	It has six access model like Admin, power user, regular user etc. Each user will have their own data information’s in the dashboard.
+2.	I managed 20+ development/QA team both onshore/offshore from Wipro point of view and I am the primary person for the requirement gathering and delivering to offshore team and getting the feature delivered on time.
+3.	First 2 months, I designed the complete UI architecture for the application with latest technology stack using Angular5, Kendo UI, React, Typescript, HTML5, CSS3 and got approved from US bank Architect/Group manager/ CapEx manager.
+4.	After that, I started developing the Dashboard project structure as per the US Bank standards (Widgets: Grid, Export PDF, Export XL, Charts). 
+5.	Involving requirement gathering, Designing, Coding and testing the application. 
+6.	Created 20+ new webpages by integrating Restful API/ Oracle database.
+7.	Developing business layer, functionality using Java Frameworks (J2EE, Spring MVC, Spring Boot, ORM, Hibernate, JDBC JPA, Log4j, jUnit etc.
+8.	Responsible for the deployment from Sandbox, Dev, IT, UAT, prep rod, Prod environments using US Bank enterprise tools like APT, HPOO, CI/CD.
+9.	Co-ordinate with automation testing team to deliver the feature on time without slippage in the schedule. 
+10.	Worked with our enterprise team to onboard git, jenkins, Fortify, SonarQube, Balck Ducker into our application as part of DevOps 2020.
+11.	Worked on IBM RTC to Git Code migration.
+
+Agile Process: (Version One, HPQC)
+We have 3 weeks sprint, 2 weeks development and 1 week testing and by ending the sprint, I will providing  the application demo to the Business Lines, Product Owners, BA team to make sure everyone are on the same page.
+
